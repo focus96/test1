@@ -1,0 +1,565 @@
+body {
+    margin: 0;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+input {
+    outline: none;
+}
+header {
+    background: url('/images/Header(back).png') no-repeat center;
+    height: 544px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding-top: 60px;
+}
+header nav {
+    height: 82px;
+    border-top: 3px solid #87929d;
+    border-bottom: 3px solid #87929d;
+    background-color: #e5e5e5;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.wrapper {
+    max-width: 1305px;
+    margin: 0 auto;
+/*    border: 1px solid blue;*/
+}
+header .wrapper {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+header .wrapper .logo {
+    display: block;
+    width: 103px;
+}
+header .wrapper .logo img {
+    display: block;
+}
+header .wrapper ul {
+/*    border: 1px solid black;*/
+}
+header .wrapper ul li {
+/*    border: 1px solid red;*/
+}
+header .wrapper ul:nth-child(2) {
+    grid-column: 2/5;
+    display: grid;
+    grid-template-columns: 28% 25% 37%;
+}
+header .wrapper ul:nth-child(2) li a {
+    color: #000;
+    font-size: 24px;
+    padding: 28px 0 18px 0;
+    display: block;
+    text-align: center;
+}
+header .wrapper ul:nth-child(2) li a:hover {
+    background-color: #d2d4d6;
+    border-bottom: 5px solid #87929d;
+}
+header .wrapper form {
+    grid-column: 6/9;
+    display: grid;
+    grid-template-columns: 33% 33% 25%;
+}
+header .wrapper form div {
+    padding: 20px 5% 0 5%;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+header .wrapper form div input {
+    padding: 10px 5px;
+    font-size: 16px;
+    text-align: center;
+    color: #000;
+    width: 100%;
+    border: none;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+/*ошибки авторизации*/
+header #login .error {
+    background-color: #fdb4b4;
+    font-size: 16px;
+}
+header #login .error::placeholder {
+    color: #f60606;
+}
+
+header .wrapper form div input::placeholder {
+    color: #999999;
+}
+header .wrapper form div input[type=button] {
+    color: #000;
+    display: block;
+    background-color: #b6dcd6;
+    text-align: center;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+header .wrapper form div a:hover {
+    background-color: #add1cb;
+}
+header .headerInfo {
+    position: absolute;
+    background-color: rgba(135, 146, 157, 0.48);
+    height: 200px;
+    width: 450px;
+    top: 250px;
+    line-height: 35px;
+}
+header .headerInfo span:first-child {
+    font-size: 37px;
+    margin: 10px 10px 0 0;
+    line-height: 45px;
+}
+header .headerInfo span:last-child {
+    font-size: 18px;
+    margin-top: 10px;
+}
+header .headerInfo span {
+    display: block;
+}
+
+/*MAIN*/
+main {
+    border-top: 5px solid #87929d;
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+main > span:first-child {
+    text-align: center;
+    display: block;
+    margin: -10px 0 10px 0;
+    font-size: 36px;
+}
+#reg span {
+    text-align: center;
+    display: block;
+    margin: 25px 0 25px 0;
+    font-size: 36px;
+}
+main > .wrapper > .plates {
+    background-color: #d3eae6;
+    padding: 44px 4.92% 40px 5.65%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+main > .wrapper > .plates > li {
+    background-color: #fff;
+}
+main > .wrapper > .plates > li:nth-child(odd) {
+    margin: 0 5.73% 50px 0;
+}
+main > .wrapper > .plates.plates > li:nth-child(even) {
+    margin: 0 0 50px 5.73%;/
+}
+.container > li:first-child {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 3px solid #87929d;
+}
+.container > li:first-child > span {
+    font-size: 24px;
+    margin: 45px 27px;
+}
+.container > li:nth-child(2) {
+    padding: 15px;
+    text-indent: 45px;
+}
+.container > li:nth-child(2) > span {
+    display: block;
+    font-size: 23px;
+}
+.statistic {
+    padding: 20px 15px 25px 60px;
+}
+.statistic li {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    font-size: 18px;
+}
+.statistic li {
+    margin: 10px 0;
+}
+.statistic li span:nth-child(even) {
+    text-align: center;
+    background-color: #c4c4c4;
+    padding: 2px 0;
+}
+
+/*PROFILE*/
+main .wrapper .profile {
+    padding: 17px 42px 17px 44px;
+    background-color: #d3eae6;
+    overflow: hidden;
+}
+main .wrapper .profile .photo {
+    float: left;
+    background-color: #fff;
+    padding: 25px 35px;
+    box-sizing: border-box;
+    width: 28%;
+}
+main .wrapper .profile .photo li:first-child {
+    display: block;
+    margin-bottom: 20px;
+    position: relative;
+    box-sizing: border-box;
+}
+main .wrapper .profile .photo li:first-child img {
+    display: block;
+    width: 240px;
+    height: 240px;
+}
+main .wrapper .profile .photo li:first-child a {/*ВЫБОР ФОТО*/
+    display: block;
+    color: rgba(0, 0, 0, 0.39);
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    font-size: 18px;
+    box-sizing: border-box;
+    padding-top: 10px;
+    background-color: rgba(204, 204, 204, 0.61);
+    transition: 0.25s;
+}
+main .wrapper .profile .photo li:first-child a:hover {
+    color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(204, 204, 204, 0.72);
+}
+/*кнопка редактировать*/
+main .wrapper .profile .photo li:last-child a,
+main .wrapper .profile .photo form input[type=submit]{
+    display: block;
+    padding: 10px 25px;
+    width: 100%;
+    color: #6e6e6e;
+    background-color: #dcdcdc;
+    font-size: 24px;
+    text-align: center;
+    transition: 0.25s;
+    border: none;
+    cursor: pointer;
+}
+main .wrapper .profile .photo form input[type=submit]:hover {
+    color: rgba(0, 0, 0, 0.72);
+    background-color: #ccc;
+}
+/*Основная информация*/
+main .wrapper .profile .info {
+    float: right;
+    background-color: #fff;
+    width: 70%;
+}
+main .wrapper .profile .info > li:nth-child(1) {
+    padding: 15px 25px 7px 20px;
+    border-bottom: 2px solid #7f7f7f;
+    font-size: 22px;
+}
+main .wrapper .profile .info > li:nth-child(2) {
+    padding: 30px;
+    font-size: 22px;
+}
+main .wrapper .profile .info > li:nth-child(2) span {
+    display: block;
+    margin-bottom: 40px;
+}
+main .wrapper .profile .info > li:nth-child(3) table {
+    border: 1px solid #000;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+main .wrapper .profile .info > li:nth-child(3) table {
+    border-left: none;
+    border-right: none;
+}
+main .wrapper .profile .info > li:nth-child(3) table td {
+    border: 1px solid #000;
+    text-align: center;
+    transition: 0.25s;
+}
+main .wrapper .profile .info > li:nth-child(3) table td:first-child {
+    border-left: none;
+}
+main .wrapper .profile .info > li:nth-child(3) table td:last-child {
+    border-right: none;
+}
+main .wrapper .profile .info > li:nth-child(3) table td a {
+    display: block;
+    width: 100%;
+    padding: 0 30px;
+    box-sizing: border-box;
+    color: #000;
+}
+main .wrapper .profile .info > li:nth-child(3) table td:hover {
+    background-color: #e2e2e2;
+}
+/*блок тестов в профиле*/
+main .test {
+    padding: 0 40px 20px 40px;
+    background-color: #d3eae6;
+    overflow: hidden;
+}
+main .test > ul {
+    background-color: #fff;
+    overflow: hidden;
+}
+main .test > ul > li:first-child,
+main .test > ul > li:nth-child(3) {
+    border-bottom: 1px solid #000;
+    padding: 5px 0;
+}
+main .test > ul > li:nth-child(3) {
+    margin: 0 30px;
+}
+main .test > ul > li:first-child span,
+main .test > ul > li:nth-child(3) span {
+    display: block;
+    text-align: center;
+    font-size: 23px;
+}
+main .test > ul > li:nth-child(2){
+    padding: 30px 45px;
+}
+main .test > ul > li:nth-child(2) ul {
+    display: flex;
+    justify-content: space-between;
+}
+main .test > ul > li:nth-child(2) ul li {
+    text-align: center;
+    background-color: #c4c4c4;
+    height: 280px;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    flex-basis: 280px;
+    justify-content: center;
+}
+main .test > ul > li:nth-child(2) ul li span {
+    font-size: 24px;
+    display: block;
+    margin: 20px;
+    width: 100%;
+}
+main .test > ul > li:nth-child(2) ul li a {
+    display: block;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    border-top: 1px solid #000;
+    padding: 5px 0;
+    font-size: 18px;
+    margin-top: 20px;
+}
+main .test > ul > li:nth-child(2) ul li a:active {
+    color: #464748;
+}
+main .test > ul > li:nth-child(4) {
+    padding: 5px 45px 0 45px;
+    overflow: hidden;
+}
+main .test > ul > li:nth-child(4) span {
+    display: block;
+    font-size: 22px;
+    margin: 0 0 25px 0;
+}
+main .test > ul > li:nth-child(4) p {
+    text-indent: 30px;
+    line-height: 22px;
+    font-size: 18px;
+    text-align: justify;
+}
+/*END TEST|TEST*/
+main .endTest {
+    background-color: #d3eae6;
+    padding: 15px 40px;
+    margin: 0 25px;
+    box-sizing: border-box;
+}
+main .endTest > ul {
+    background-color: #fff;
+    font-size: 24px;
+    overflow: hidden;
+    padding-top: 20px;
+}
+main .endTest > ul > li:not(.result) {
+    text-align: center;
+    margin-bottom: 25px;
+}
+main .endTest > ul > li:last-child a {
+    color: #000;
+    display: block;
+    background-color: #ccc;
+    width: 270px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+main .endTest > ul > .result > p {
+    margin: 20px 30px;
+    text-align: justify;
+    text-indent: 20px;
+}
+main .test > li:nth-child(2) > span {
+    text-align: left;
+    display: block;
+}
+main .test .radio {
+    float: left;
+    margin-bottom: 20px;
+    border: 1px solid #000;
+    border-collapse: collapse;
+}
+main .test .radio tr td {
+    border: 1px solid #000;
+    padding: 5px 10px;
+}
+main .test .next a {
+    float: left;
+    clear: both;
+}
+
+
+
+/*REGISTRATION*/
+.registration {
+    background: url('/images/registr.png');
+    height: 567px;
+    position: relative;
+}
+.registration form {
+    position: absolute;
+    top: 80px;
+    right: 10px;
+    width: 33%;
+    box-sizing: border-box;
+    padding-right: 7px;
+}
+.registration form ul label {
+    float: left;
+    padding-top: 7px;
+    font-size: 18px;
+}
+.registration form ul li {
+    overflow: hidden;
+}
+.registration form ul input,
+.registration form ul select{
+    float: right;
+    padding: 5px;
+    margin: 0 0 0 2%;
+    width: 78%;
+    font-size: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border: none;
+    color: #292929;
+}
+.registration form ul li:first-child span {
+    text-align: center;
+    display: block;
+    font-size: 24px;
+    margin-left: 90px;
+    margin-bottom: 20px;
+}
+.registration form ul li .error {
+    float: left;
+    margin: 1px 0 -5px 22%;
+    font-size: 14px;
+    color: #d31500;
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 25px;
+}
+.registration form ul li:last-child input[type=submit] {
+    color: #000;
+    display: block;
+    text-align: center;
+    padding: 5px 0 8px 0;
+    width: 63%;
+    margin-left: 130px;
+    font-size: 24px;
+    background-color: #2dc108;
+    float: none;
+    cursor: pointer;
+}
+
+
+
+
+/*FOOTER*/
+footer .navigation {
+    height: 177px;
+    background-color: #e5e5e5;
+    padding: 47px 0;
+    box-sizing: border-box;
+}
+footer .navigation .wrapper ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+footer .navigation .wrapper ul li:not(.logo) {
+    padding: 30px 0 0 0;
+}
+footer .navigation .wrapper ul li {
+    display: flex;
+    justify-content:space-between;
+}
+footer .navigation .wrapper ul li a {
+    display: block;
+    text-align: center;
+    font-size: 22px;
+    color: #000;
+}
+footer .copyright {
+    height: 120px;
+    box-sizing: border-box;
+    background-color: #87929d;
+    text-align: center;
+    padding-top: 45px;
+}
+footer .copyright span {
+    font-size: 24px;
+    cursor: default;
+}
+/*STICKY ONLINE HELP*/
+body .online {
+    background-color: #2dc108;
+    width: 250px;
+    padding: 7px 15px;
+    border-radius: 20px 20px 0 0;
+    transform: rotate(-90deg);
+    position: fixed;
+    right: -120px;
+    top: 350px;
+}
+body .online a {
+    font-size: 18px;
+    float: left;
+    padding-top: 5px;
+    color: #000;
+}
+body .online::after {
+    content: '';
+    background: url('/images/arrow.png') no-repeat 220px 0px;
+    background-size: 30px;
+    height: 20px;
+    display: block;
+    padding: 5px;
+}
