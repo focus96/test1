@@ -8,6 +8,8 @@ Route::post('/', 'RegistrationController@create')->name('create');
 //авторизация
 Route::post('/login', 'AuthController@login')->name('login');
 
+Route::resource('books', 'BooksController');
+
 
 //страницы
 //Route::get('/profile', 'TestController@profile');
