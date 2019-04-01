@@ -13,3 +13,5 @@ Route::post('/login', 'AuthController@login')->name('login');
 //Route::get('/profile', 'TestController@profile');
 //Route::get('/startTest', 'TestController@startTest');
 //Route::get('/endTest', 'TestController@endTest');
+
+Route::get('/someNewRoute', 'SomeNewController@method')->name('someNewRoute');
