@@ -15,3 +15,9 @@ Route::resource('books', 'BooksController');
 //Route::get('/profile', 'TestController@profile');
 //Route::get('/startTest', 'TestController@startTest');
 //Route::get('/endTest', 'TestController@endTest');
+
+
+Route::get('/post', "PostController")->name('post');
+
+Route::get('/someNewRoute', 'SomeNewController@method')->name('someNewRoute');
+
