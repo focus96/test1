@@ -7,6 +7,6 @@ use Illuminate\Http\Request;
 class SomeNewController extends Controller
 {
     public function method () {
-        return 'some';
+        return 'some' . 'text';
     }
 }
